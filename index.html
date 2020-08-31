@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>个人主页</title>
+    <meta name="description" content="iGuanren,官仁有话说">
+    <meta name="keywords" content="iGuanren,官仁有话说">
+    <link rel="icon" type="image/ico" href="//gravatar.loli.net/avatar/4cc893d113dd74ceca73f9863f2c5446/">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>Hello，我是官仁有话说</h1>
+                <p>很荣幸您能来到我的主页，目前从事互联网保险行业，供职于水滴保险商城，希望以后的我们都能越来越好~ </p>
+                <p>送给你一句我很喜欢的话：<br>Hope you know a lot and still love life .<br>希望你懂得很多之后，依旧热爱生活，共勉！
+                </p>
+
+                <p>Contact me:</p>
+                <div class="row">
+                    <button id="kaygb-blog" class="btn btn-primary col-lg-4">Home</button>
+                    <a href="//uycool.com" id="kaygb-blog-a" target="_blank" class="btn btn-primary col-lg-4">Home</a>
+                    <a href="https://github.com/iguanren" target="_blank" class="btn btn-secondary col-lg-4">GitHub</a>
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=uycool@qq.com" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">Email</a>
+                    <button id="kaygb-mail" class="btn btn-success col-lg-4">Email</button>
+                </div>
+
+
+                <h4 class="mt-4">or, keep your eyes on</h4>
+                <ul class="social mt-1">
+                    <li><a href="https://weibo.com/u/5223004318"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/kaygb"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
+                </ul>
+                <footer>
+                    <p>© 2020 <a href="https://uycool.com" target="_blank">官仁有话说</a> <a href="http://beian.miit.gov.cn/" target="_blank">蜀ICP备17029447号</a>
+                        <br> 鸣谢：
+                        <a href="https://github.com" target="_blank" rel="nofollow">Github</a>
+                        <a href="https://music.163.com/" target="_blank" rel="nofollow">163Music</a>
+
+                    </p>
+                    </p>
+
+                </footer>
+            </div>
+        </div>
+
+    </div>
+    <div id="aplayer" class="aplayer" data-order="random" data-id="20173709" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.8"></div>
+    <!-- aplayer -->
+
+
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
+    <script>
+        //弹出一个页面层
+        $('#kaygb-blog').on('click', function() {
+            layer.open({
+                type: 2,
+                title: '官仁有话说',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['80%', '100%'],
+                content: '//uycool.com/'
+            });
+        });
+        $('#kaygb-mail').on('click', function() {
+            layer.open({
+                type: 2,
+                title: '邮件联系我',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['80%', '100%'],
+                content: '//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=uycool@qq.com'
+            });
+        });
+    </script>
+
+</html>
